@@ -1,0 +1,51 @@
+
+html{
+    background-color: lightblue;
+}
+span{
+    color: black;
+    font-size: 50px;
+}
+h1{
+    
+    text-align: center;
+    color: blue;
+}
+p.centro{
+    
+    text-align: center;
+}
+
+
+div p::first-line{
+
+    color: red;
+}
+
+h3{
+    counter-reset: cuenta-num;
+}
+p.num::before{
+    content: counter(cuenta-num) ".";
+    counter-increment: cuenta-num;
+}
+img{
+    float: right;
+}
+span{
+    clear: both;
+}
+a.ama:hover{
+    color: red;
+    background-color: yellow;
+
+
+}
+a{
+    color: blue;
+    background-color: white;
+}
+a.ser:visited{
+    background-color: blue;
+    color: white;
+}
